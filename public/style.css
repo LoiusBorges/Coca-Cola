@@ -1,0 +1,26 @@
+:root{
+    --colorBlack: #000000;
+    --colorLightBlack: #262626;
+    --colorGray: #f2f2f2;
+    --colorWhite: #ffffff;
+}
+@font-face {
+    font-family: Poppins;   
+    src: url(/src/font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: PoppinsBold;
+    src: url(/src/font/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(/src/font/Poppins/Poppins-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
