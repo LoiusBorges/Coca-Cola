@@ -105,12 +105,12 @@ body {
 
 .acessar button{
     margin-top: 3em;
-    padding: 10px;
     background: var(--colorWhite);
     border-radius: 10px;
     border: #000000;
     width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
 }
-.acessar a{
-    color: var(--colorBlack);
-}
+
