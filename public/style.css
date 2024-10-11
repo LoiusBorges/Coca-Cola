@@ -1,14 +1,16 @@
 /* Configuraçaõ Global*/
-:root{
+:root {
     --colorBlack: #000000;
     --colorLightBlack: #262626;
     --colorGray: #f2f2f2;
     --colorWhite: #ffffff;
 }
+
 @font-face {
-    font-family: Poppins;   
+    font-family: Poppins;
     src: url(/src/font/Poppins/Poppins-Regular.ttf);
 }
+
 @font-face {
     font-family: PoppinsBold;
     src: url(/src/font/Poppins/Poppins-Bold.ttf);
@@ -19,7 +21,7 @@
     src: url(/src/font/Poppins/Poppins-Medium.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,17 +29,19 @@
     list-style: none;
     text-decoration: none;
 }
-body{
+
+body {
     background: var(--colorGray);
 }
 
 /*Navegação*/
-.navhead{
+.navhead {
     display: flex;
     height: 10vh;
     background: var(--colorWhite);
 }
-.navbase{
+
+.navbase {
     display: flex;
     align-self: center;
     margin: 0 auto;
@@ -46,38 +50,36 @@ body{
     justify-self: end;
     gap: 5vw;
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
 }
-.navbar li{
+
+.navbar li {
     padding: 10px;
-    
+
 }
-.navbar a{
+
+.navbar a {
     color: var(--colorBlack);
 }
+
 .logo {
     padding: 10px;
 }
 
 /* Slogan*/
-.slogan{
+.slogan {
     position: relative;
     width: 100%;
     height: 75vh;
-    background: url(/src/images/jpg/coca-banner.jpg) 100% 46%;
+    background: linear-gradient(0deg, rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(/src/images/jpg/coca-banner.jpg) 100% 46%;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.slogan::before{
-    position: absolute;
-    content: "";
-    height: 75vh;
-    width: 100%;
-    opacity: 0.5;
-    background: #000000;
-}
-.acessar p {
+
+.acessar  {
     color: white;
 
 }
