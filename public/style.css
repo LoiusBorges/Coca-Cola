@@ -41,17 +41,16 @@ body {
 
 /*Navegação*/
 .navhead {
-    display: flex;
     height: 10vh;
     background: var(--colorWhite);
 }
 
 .navbase {
     display: flex;
-    align-self: center;
     margin: 0 auto;
+    align-items: center;
     width: 80vw;
-    height: 5vh;
+    height: 10vh;
     justify-self: end;
     gap: 5vw;
 }
@@ -111,7 +110,7 @@ body {
     margin-top: 3em;
     background: var(--colorWhite);
     border-radius: 10px;
-    border: #000000;
+    border: none;
     width: 100%;
     font-size: 1rem;
     padding: 10px;
@@ -222,8 +221,6 @@ body {
     padding: 1rem 0 2rem 0 ;
     justify-content: space-between;
 }
-
-
 .social ul{
     display: flex;
     gap: 10px;
