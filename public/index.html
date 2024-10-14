@@ -1,106 +1,87 @@
-<html lang="pt-br">
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="coca_icon.png" type="image/x-icon">
+    <title>Modelo Coca-Cola</title>
     <link rel="stylesheet" href="style.css">
-    <title>Coca-cola</title>
 </head>
 
 <body>
-    <header>
-        <div class="navhead">
-            <div class="navbase">
-                <div class="logo">
-                    <span>
-                        <a href="/public/index.html"><img src="/src/images/svg/coca_logo.svg" alt="coca_logo">
-                    </span>
-                </div>
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                            <li><a href="/public/index.html">Home</a></li>
-                            <li><a href="/src/pages/produtos/produtos.html">Produtos</a></li>
-                            <li><a href="/src/pages/promoções/promocoes.html">Promoções</a></li>
-                            <li><a href="/src/pages/marcas/marcas.html">Marcas</a></li>
-                            <li><a href="/src/pages/sustentabilidade/sustentabilidade.html">Sustentabilidade</a></li>
-                            <li><a href="/src/pages/nossa historia/nossahistoria.html">Nossa Historia</a></li>
-                            <li><a href="/src/pages/contatos/contatos.html">Contatos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
     <main>
-        <div class="bgslogan">
-            <div class="slogan">
-                <div class="sloganlogo">
+        <section class="slogan-bg">
+            <div class="container slogan">
+                <div class="slogan-content">
+                    <p class="slogan-texto">Venha fazer parte <br> voçê tábem</p>
+                    <a href="/src/pages/produtos/produtos.html" class="slogan-bnt">Acessar</a>
+                </div>
+                <div class="slogan-logo">
                     <span>
-                        <img class="log" src="/src/images/svg/coca_logo.svg" alt="coca_logo">
+                        <img class="log img-fluido" src="/src/images/svg/coca_logo.svg" alt="coca_logo">
                     </span>
-                </div>
-                <div class="acessar">
-                    <p>Venha fazer parte <br> voçê tábem</p>
-                    <a href="/src/pages/produtos/produtos.html"><button>Acessar</button></a>
-                </div>
-            </div>
-        </div>
-
-        <section>
-            <div class="carrocel">
-                <div class="card">
-                    <img src="/src/images/jpg/coca_produtos.jpg" alt="coca_produtos">
-                    <div class="cardcontent">
-                        <h3><a href="/src/pages/produtos/produtos.html">Produtos</a></h3>
-                        <p>
-                            Uma experiência única que conecta pessoas ao redor do mundo. Com seu sabor inconfundível e
-                            refrescante
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/src/images/jpg/coca_marcas.jpg" alt="coca_marcas">
-                    <div class="cardcontent">
-                        <h3><a href="/src/pages/marcas/marcas.html">Marcas</a></h3>
-                        <p>
-                            As marcas criam experiências que inspiram, conectam e geram emoções.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/src/images/jpg/coca_sustentabilidade.jpg" alt="coca_sustentabilidade">
-                    <div class="cardcontent">
-                        <h3><a href="/src/pages/sustentabilidade/sustentabilidade.html">Sustentabilidade</a></h3>
-                        <p>
-                            Sustentabilidade é mais do que uma tendência é um compromisso com o futuro do planeta e das
-                            próximas
-                            gerações.
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
-        <article>
-            <div class="bgartigo">
-                <div class="artigocontent">
-                    <h2>Sustentabilidade</h2>
-                    <p>
-                        A sustentabilidade não se resume apenas ao aspecto ambiental, mas também envolve o impacto
-                        social. A
-                        Coca-Cola tem se engajado em várias iniciativas sociais que promovem o desenvolvimento
-                        sustentável nas
-                        comunidades onde atua.Além disso, a Coca-Cola tem trabalhado em colaboração com ONGs, governos e
-                        outras
-                        empresas para buscar soluções conjuntas para os desafios ambientais e sociais.
-                    </p>
+
+        <section class="container">
+            <div class=" carrocel">
+                <div class="card">
+                    <a href="" class="card-link">
+                        <img class="img-fluido" src="/src/images/jpg/coca_produtos.jpg" alt="coca_produtos">
+                        <div class="card-content">
+                            <h3 class="card-titulo">Produtos</h3>
+                            <p class="card-texto">
+                                Uma experiência única que conecta pessoas ao redor do mundo. Com seu sabor inconfundível
+                                e
+                                refrescante
+                            </p>
+                        </div>
+                    </a>
                 </div>
-                <div class="artigofamily">
-                    <img src="/src/images/jpg/coca_familia.jpg" alt="coca_familia">
+
+                <div class="card">
+                    <a href="" class="card-link">
+                        <img class="img-fluido" src="/src/images/jpg/coca_marcas.jpg" alt="coca_marcas">
+                        <div class="card-content">
+                            <h3 class="card-titulo">Marcas</h3>
+                            <p class="card-texto">
+                                As marcas criam experiências que inspiram, conectam e geram emoções.
+                            </p>
+                        </div>
+                    </a>
                 </div>
+
+                <div class="card">
+                    <a href="" class="card-link">
+                        <img class="img-fluido" src="/src/images/jpg/coca_sustentabilidade.jpg" alt="coca_sustentabilidade">
+                        <div class="card-content">
+                            <h3 class="card-titulo">Sustentabilidade</h3>
+                            <p class="card-texto">
+                                Sustentabilidade é mais do que uma tendência é um compromisso com o futuro do planeta e
+                                das
+                                próximas gerações.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <article class="container">
+            <div class="artigocontent">
+                <h2>Sustentabilidade</h2>
+                <p>
+                    A sustentabilidade não se resume apenas ao aspecto ambiental, mas também envolve o impacto
+                    social. A
+                    Coca-Cola tem se engajado em várias iniciativas sociais que promovem o desenvolvimento
+                    sustentável nas
+                    comunidades onde atua.Além disso, a Coca-Cola tem trabalhado em colaboração com ONGs, governos e
+                    outras
+                    empresas para buscar soluções conjuntas para os desafios ambientais e sociais.
+                </p>
+            </div>
+            <div class="familyimg ">
+                <img class="img-fluido imgborder" src="/src/images/jpg/coca_familia.jpg" alt="coca_familia">
             </div>
         </article>
     </main>
@@ -115,24 +96,24 @@
                     <img src="/src/images/svg/coca_logo.svg" alt="coca_logo">
                 </div>
                 <div class="navfooter">
-                    <div class="sobreitens">
+                    <div class="sobre-itens">
                         <ul>
                             <li><a href="/src/pages/produtos/produtos.html">Produtos</a></li>
                             <li><a href="/src/pages/promoções/promocoes.html">Promoções</a></li>
-                            <li><a href="/src/pages/marcas/marcas.html">Marca</a></li>
+                            <li><a href="/src/pages/marcas/marcas.html">Marcas</a></li>
                         </ul>
                         <ul>
                             <li><a href="/src/pages/contatos/contatos.html">Contatos</a></li>
                             <li><a href="/src/pages/sustentabilidade/sustentabilidade.html">Sustentabilidade</a></li>
                             <li><a href="/src/pages/nossa historia/nossahistoria.html">Nossa Historia</a></li>
                         </ul>
-                    </div>
-                    <div class="social">
-                        <ul>
-                            <li><img src="/src/icons/icons-facebook.svg" alt="icons-facebook"></li>
-                            <li><img src="/src/icons/icons-instagram.svg" alt="icons-instagram"></li>
-                            <li><img src="/src/icons/icons-youtube.svg" alt="icons-youtube"></li>
-                        </ul>
+                        <div class="social">
+                            <ul>
+                                <li><img src="/src/icons/icons-facebook.svg" alt="icons-facebook"></li>
+                                <li><img src="/src/icons/icons-instagram.svg" alt="icons-instagram"></li>
+                                <li><img src="/src/icons/icons-youtube.svg" alt="icons-youtube"></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
