@@ -8,16 +8,50 @@
 </head>
 
 <body>
+    <header class="nav-head">
+        <a href="/public/index.html">
+            <img class="nav-logo" src="/src/images/svg/coca_logo.svg" alt="">
+        </a>
+        <button class="menu">
+            <img id="menu-icon" src="/src/images/svg/menu.svg" >
+        </button>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li>
+                    <a href="/public/index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="/src/pages/produtos/produtos.html" class="nav-link">Produtos</a>
+                </li>
+                <li>
+                    <a href="/src/pages/promoções/promocoes.html" class="nav-link">Promoções</a>
+                </li>
+                <li>
+                    <a href="/src/pages/marcas/marcas.html" class="nav-link">Marcas</a>
+                </li>
+                <li>
+                    <a href="/src/pages/sustentabilidade/sustentabilidade.html" class="nav-link">Sustentabilidae</a>
+                </li>
+                <li>
+                    <a href="/src/pages/nossa historia/nossahistoria.html" class="nav-link">Nosa Historia</a>
+                </li>
+                <li>
+                    <a href="/src/pages/contatos/contatos.html" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <section class="slogan-bg">
             <div class="container slogan">
                 <div class="slogan-content">
                     <p class="slogan-texto">Venha fazer parte <br> voçê tábem</p>
-                    <a href="/src/pages/produtos/produtos.html" class="slogan-bnt">Acessar</a>
+                    <a href="/src/pages/contatos/contatos.html" class="slogan-bnt">Acessar</a>
                 </div>
                 <div class="slogan-logo">
                     <span>
-                        <img class="log img-fluido" src="/src/images/svg/coca_logo.svg" alt="coca_logo">
+                        <img class="slogan-icon img-fluido" src="/src/images/svg/coca_logo.svg" alt="coca_logo">
                     </span>
                 </div>
             </div>
@@ -26,7 +60,7 @@
         <section class="container">
             <div class=" carrocel">
                 <div class="card">
-                    <a href="" class="card-link">
+                    <a href="/src/pages/produtos/produtos.html" class="card-link">
                         <img class="img-fluido" src="/src/images/jpg/coca_produtos.jpg" alt="coca_produtos">
                         <div class="card-content">
                             <h3 class="card-titulo">Produtos</h3>
@@ -40,7 +74,7 @@
                 </div>
 
                 <div class="card">
-                    <a href="" class="card-link">
+                    <a href="/src/pages/marcas/marcas.html" class="card-link">
                         <img class="img-fluido" src="/src/images/jpg/coca_marcas.jpg" alt="coca_marcas">
                         <div class="card-content">
                             <h3 class="card-titulo">Marcas</h3>
@@ -52,7 +86,7 @@
                 </div>
 
                 <div class="card">
-                    <a href="" class="card-link">
+                    <a href="/src/pages/sustentabilidade/sustentabilidade.html" class="card-link">
                         <img class="img-fluido" src="/src/images/jpg/coca_sustentabilidade.jpg" alt="coca_sustentabilidade">
                         <div class="card-content">
                             <h3 class="card-titulo">Sustentabilidade</h3>
@@ -68,9 +102,9 @@
         </section>
 
         <article class="container">
-            <div class="artigocontent">
-                <h2>Sustentabilidade</h2>
-                <p>
+            <div class="artigo-conteudo">
+                <h2 class="artigo-titulo">Sustentabilidade</h2>
+                <p class="artigo-texto">
                     A sustentabilidade não se resume apenas ao aspecto ambiental, mas também envolve o impacto
                     social. A
                     Coca-Cola tem se engajado em várias iniciativas sociais que promovem o desenvolvimento
@@ -80,8 +114,8 @@
                     empresas para buscar soluções conjuntas para os desafios ambientais e sociais.
                 </p>
             </div>
-            <div class="familyimg ">
-                <img class="img-fluido imgborder" src="/src/images/jpg/coca_familia.jpg" alt="coca_familia">
+            <div class="familia-img ">
+                <img class="img-fluido img-border" src="/src/images/jpg/coca_familia.jpg" alt="coca_familia">
             </div>
         </article>
     </main>
@@ -95,7 +129,7 @@
                     </h3>
                     <img src="/src/images/svg/coca_logo.svg" alt="coca_logo">
                 </div>
-                <div class="navfooter">
+                <div class="nav-rodape">
                     <div class="sobre-itens">
                         <ul>
                             <li><a href="/src/pages/produtos/produtos.html">Produtos</a></li>
@@ -119,5 +153,6 @@
             </div>
         </div>
     </footer>
+    <script src="/src/js/menu.js"></script>
 </body>
 </html>

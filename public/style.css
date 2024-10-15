@@ -1,9 +1,10 @@
+/*Configura Global */
 :root {
     --colorBlack: #000000;
     --colorLightBlack: #262626;
     --colorGray: #f2f2f2;
     --colorWhite: #ffffff;
-    --colorLogoWhite:invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
+    --colorLogoWhite: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
 }
 
 @font-face {
@@ -20,6 +21,7 @@
     font-family: PoppinsMedium;
     src: url(/src/font/Poppins/Poppins-Medium.ttf);
 }
+
 @font-face {
     font-family: PoppinsLight;
     src: url(/src/font/Poppins/Poppins-Light.ttf);
@@ -38,24 +40,63 @@ body {
     background: var(--colorGray);
 }
 
-/*Navegação*/
-.navhead {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-    background: var(--colorWhite);
+.container {
+    margin: 0 auto;
+    width: 80%;
 }
 
-/* Slogan*/
+.img-fluido {
+    max-width: 100%;
+    max-height: 100%;
+}
 
-/*Arrumar depois o background */
+/*Navegação*/
+.menu {
+    display: none;
+    background: var(--colorWhite);
+    border: none;
+}
+
+#menu-icon {
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
+
+    width: 5vw;
+    height: 5vh;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.nav-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    background: var(--colorWhite);
+    padding: 0 5rem;
+}
+
+.nav-bar.ativar {
+    height: 100%;
+    z-index: 2;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: black;
+}
+
+/* SLOGAN */
 .slogan-bg {
     position: relative;
     width: 100%;
     height: 75vh;
-    background: linear-gradient(0deg, rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(/src/images/jpg/coca-banner.jpg) 100% 46% fixed;
+    background: linear-gradient(0deg, rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/src/images/jpg/coca-banner.jpg) 100% 46% fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,18 +107,22 @@ body {
     height: 75vh;
     grid-template-columns: 1fr 2fr;
 }
-.slogan-logo{
+
+.slogan-logo {
     justify-self: end;
     padding: 0vh;
 }
+
 .slogan-content {
     justify-self: center;
     align-self: center;
 }
+
 .slogan-texto {
     font-size: 2rem;
     color: white;
 }
+
 .slogan-bnt {
     display: inline-block;
     margin: 1rem 0 1rem 0;
@@ -90,8 +135,7 @@ body {
     border-radius: 1rem;
 }
 
-
-.log{
+.slogan-icon {
     filter: var(--colorLogoWhite);
     width: 15vw;
     height: 10vh;
@@ -99,55 +143,12 @@ body {
     min-height: 250px;
 }
 
-.acessar  {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    color: white;
-    font-family: PoppingMedium;
-    font-size: 2rem;
-    width: 25%;
-}
-
-.acessar p{
-    font-size: 1rem;
-}
-
-.acessar a {
-    min-width: 250px;
-}
-.acessar button{
-    margin-top: 3em;
-    background: var(--colorWhite);
-    border-radius: 10px;
-    border: none;
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.7rem;
-    cursor: pointer;
-}
-
-.acessar button:hover {
-    box-shadow: 0px 10px 10px rgba(38, 38, 38, 0.5);
-    transition: 0.5s ;
-}
-
 /* Carrocel*/
-.container{
-    margin: 0 auto;
-    width: 80%;
-}
-
 .carrocel {
-    margin: 10vh 0 10vh 0 ;
+    margin: 10vh 0 10vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-}
-
-.img-fluido {
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .card {
@@ -156,21 +157,20 @@ body {
     flex-direction: column;
     background: var(--colorWhite);
     min-width: 0;
- 
+
     word-wrap: break-word;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
 }
 
-
-.card:hover{
+.card:hover {
     transition: 0.5s;
     box-shadow: 0px 10px 10px rgba(38, 38, 38, 0.5);
 }
 
 .card img {
-    border-radius: 0.5rem 0.5rem 0  0;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .card-content {
@@ -178,20 +178,23 @@ body {
     margin: 1rem;
     gap: 1rem;
 }
+
 .card-titulo {
     font: PoppinsBold;
     font-size: 2rem;
 }
+
 .card-texto {
     font: PoppinsLight;
     font-size: 1.5rem;
 }
-.card-link{
+
+.card-link {
     color: var(--colorBlack);
 }
 
 /*Artigo */
-.artigocontent {
+.artigo-conteudo {
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
@@ -201,18 +204,18 @@ body {
     margin-bottom: 5rem;
 }
 
-.artigocontent h2 {
+.artigo-titulo {
     font-family: PoppinsBold;
     font-size: clamp(1rem, 0.9072rem + 4.9485vw, 4rem);
 }
 
-.artigocontent p{
+.artigo-texto {
     font-family: PoppinsLight;
     font-size: clamp(0.7rem, 0.9381rem + 3.299vw, 3rem);
     color: #000000d1;
 }
 
-.familyimg {
+.familia-img {
     display: inline-block;
     width: 100%;
 
@@ -220,12 +223,12 @@ body {
     margin-bottom: 2vh;
 }
 
-.familyimg img {
+.familia-img img {
     width: 100%;
     margin: 0 auto;
 }
 
-.imgborder {
+.img-border {
     border-radius: 2rem;
 }
 
@@ -233,6 +236,7 @@ body {
 .rodape {
     background: var(--colorLightBlack);
 }
+
 .sobre {
     display: flex;
     padding-top: 2rem;
@@ -240,11 +244,13 @@ body {
     border-bottom: 3px solid var(--colorWhite);
     align-items: center;
 }
+
 .sobre h3 {
     color: var(--colorWhite);
     font-family: PoppinsLight;
     font-size: clamp(0.2rem, 0.0825rem + 6.268vw, 4rem);
 }
+
 .sobre img {
     filter: var(--colorLogoWhite);
     width: 15vw;
@@ -253,66 +259,110 @@ body {
     min-width: 100px;
 }
 
-.navfooter {
+.nav-rodape {
     display: flex;
-    padding: 1rem 0 2rem 0 ;
+    padding: 1rem 0 2rem 0;
     justify-content: space-between;
 }
-.social ul{
+
+.social ul {
     display: flex;
     gap: 10px;
     filter: var(--colorLogoWhite);
     justify-content: end;
 }
 
-.sobre-itens{
+.sobre-itens {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 2fr;
 }
+
 .sobre-itens a {
     color: var(--colorWhite);
 }
+
 .sobre-itens li {
     margin-bottom: 1rem;
 }
 
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1000px) {
+    .nav-head {
+        padding: 0 3rem;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        font-size: 2rem;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 0;
+        background: var(--colorWhite);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar.ativar ul {
+        opacity: 1;
+        height: 100%;
+    }
+
+    .nav-bar.ativar li {
+        height: 100%;
+        align-content: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
     .sloganlogo {
         justify-content: center;
     }
-    .log{
-        height: 200px;
-        width: 250px;
-    }
-    .acessar{
+
+    .acessar {
         align-items: center;
         width: 100%;
     }
+
     .carrocel {
         grid-template-columns: 1fr;
         justify-items: center;
-        
+
     }
+
     .card {
         max-width: 400px;
-        
+
     }
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .sobre-itens {
         grid-template-columns: 1fr;
         justify-items: start;
     }
+
     .slogan {
         grid-template-columns: 1fr;
         align-content: center;
     }
-    .slogan-logo{
+
+    .slogan-logo {
         justify-self: center;
     }
-    
-
 }
