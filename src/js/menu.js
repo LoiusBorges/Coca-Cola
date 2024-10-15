@@ -7,8 +7,8 @@ menu.onclick = function () {
 
     
     if (navBar.classList.contains("ativar")) {
-        menuIcon.src = "/src/images/svg/fechar.svg"; 
+        menuIcon.src = "/src/icons/icons-fechar.svg"; 
     } else {
-        menuIcon.src = "/src/images/svg/menu.svg"; 
+        menuIcon.src = "/src/icons/icons-menu.svg"; 
     }
 }
